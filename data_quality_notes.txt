@@ -1,0 +1,103 @@
+DKCONSULTING DATA QUALITY NOTES
+
+1. SOURCE DATA
+- Customers: 2,500 records
+- Orders: 12,000 records
+- Order items: 21,015 records
+- Products: 60 records
+- Fulfillment: 12,000 records
+- Returns: 2,514 records
+
+2. DUPLICATE PRIMARY KEYS
+- Customers: 0
+- Orders: 0
+- Order items: 0
+- Products: 0
+- Fulfillment: 0
+- Returns: 0
+
+Treatment:
+No duplicate-key corrections are required.
+
+3. MISSING DESCRIPTIVE FIELDS
+- Missing customer region: 57
+- Missing acquisition channel: 21
+- Missing customer segment: 0
+- Missing promotion ID: 8,248
+- Missing return reason: 333
+
+Treatment:
+- Missing customer region will be labeled Unknown.
+- Missing acquisition channel will be labeled Unknown.
+- Missing return reason will be labeled Unknown.
+- Missing promotion ID will be interpreted as No Promotion.
+- Records will not be removed solely because a descriptive field is missing.
+
+4. RELATIONSHIP CHECKS
+- Orders without customer: 0
+- Order items without order: 0
+- Order items without product: 0
+- Fulfillment without order: 0
+- Returns without order item: 0
+
+Treatment:
+No relationship-based exclusions are required.
+
+5. DATE CHECKS
+- Orders before customer signup: 14
+- Customer signups after June 30, 2026: 6
+- Returns before order date: 0
+- Delivery-status conflicts: 0
+
+Treatment:
+- Retain the 14 orders before signup for the initial analysis.
+- Retain the 6 customers with signups after the analysis period.
+- Document these 20 records as data-quality limitations.
+- Run a sensitivity check later to determine whether excluding these records changes conclusions.
+
+6. FINANCIAL AND QUANTITY CHECKS
+- Invalid order-item quantity: 0
+- Negative unit price: 0
+- Negative discount: 0
+- Discount exceeding gross sales: 0
+- Negative product cost: 0
+- Product cost exceeding list price: 0
+- Negative shipping cost: 0
+- Invalid return quantity: 0
+- Negative return amount: 0
+- Returned quantity exceeding purchased quantity: 0
+
+Treatment:
+No exclusions are required for invalid financial or quantity values.
+
+7. ORDER AND DELIVERY STATUS
+- Completed orders: 12,000
+- On-time deliveries: 10,870
+- Late deliveries: 1,130
+- Approximate late-delivery rate: 9.42%
+
+8. RETURN PROFILE
+- Total return records: 2,514
+- Total return amount: approximately $523,796.80
+- Size or Fit: 628 returns, $113,870.05
+- Changed Mind: 523 returns, $113,708.28
+- Unknown: 333 returns, $73,168.21
+- Not as Described: 301 returns, $70,602.73
+- Damaged: 334 returns, $70,437.01
+- Arrived Late: 221 returns, $48,280.23
+- Wrong Item: 174 returns, $33,730.29
+
+9. ACQUISITION CHANNEL PROFILE
+- Organic Search: 664 customers
+- Paid Search: 516 customers
+- Paid Social: 485 customers
+- Email: 461 customers
+- Referral: 353 customers
+- Unknown: 21 customers
+
+10. OVERALL ASSESSMENT
+- The dataset has reliable keys and table relationships.
+- Financial and quantity fields passed the initial validation checks.
+- Missing descriptive fields will be retained and categorized as Unknown.
+- Small date anomalies will be retained and disclosed as limitations.
+- The data is suitable for initial profitability analysis.
