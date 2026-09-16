@@ -1,0 +1,3 @@
+"delivery_status","order_count","average_shipping_cost","return_amount","return_value_rate","contribution_margin_rate"
+"Late",1130,11.17,64735.72,0.1234,0.2661
+"On Time",10870,11.16,459061.08,0.0914,0.2968

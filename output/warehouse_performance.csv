@@ -1,0 +1,4 @@
+"warehouse_region","order_count","late_order_count","average_shipping_cost","total_shipping_cost","total_shipping_revenue","net_shipping_cost","return_amount","net_revenue","contribution_margin","contribution_margin_rate"
+"West Hub",4385,495,12.09,53020.55,13707.31,39313.24,203613.38,1753643.8,497856.09,0.2839
+"East Hub",3702,289,10.64,39407.24,11266.59,28140.65,166378.64,1526196.54,451649.57,0.2959
+"Central Hub",3913,346,10.6,41479.6,12098.37,29381.23,153804.78,1588434.04,481624.92,0.3032

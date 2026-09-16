@@ -1,0 +1,36 @@
+"category","return_reason","return_record_count","returned_units","return_amount"
+"Apparel","Size or Fit",422,451,47299.94
+"Electronics","Changed Mind",85,90,40686.33
+"Home","Changed Mind",100,109,32251.08
+"Electronics","Not as Described",58,61,31501.68
+"Electronics","Size or Fit",56,62,30428.27
+"Electronics","Unknown",61,66,29314.47
+"Apparel","Changed Mind",250,264,27055.2
+"Electronics","Damaged",62,65,25904.73
+"Home","Size or Fit",73,77,22685.84
+"Home","Damaged",60,62,19143.23
+"Apparel","Unknown",162,173,18436.71
+"Apparel","Damaged",153,164,17283.25
+"Home","Arrived Late",49,56,17218.66
+"Home","Unknown",46,54,15764.24
+"Apparel","Not as Described",138,151,15620.84
+"Home","Not as Described",45,45,14193.4
+"Electronics","Arrived Late",29,33,12503.24
+"Apparel","Arrived Late",102,107,10622.1
+"Outdoor","Changed Mind",52,58,10608.21
+"Electronics","Wrong Item",22,24,9932.72
+"Apparel","Wrong Item",88,94,9838.86
+"Outdoor","Size or Fit",37,41,9786.13
+"Home","Wrong Item",22,25,7705.03
+"Outdoor","Not as Described",38,39,7232.88
+"Outdoor","Unknown",29,31,6777.32
+"Outdoor","Arrived Late",21,25,5859.07
+"Outdoor","Damaged",25,28,4946.28
+"Outdoor","Wrong Item",21,22,4590.25
+"Beauty","Size or Fit",40,42,3669.87
+"Beauty","Damaged",34,35,3159.52
+"Beauty","Changed Mind",36,39,3107.46
+"Beauty","Unknown",35,35,2875.47
+"Beauty","Arrived Late",20,21,2077.16
+"Beauty","Not as Described",22,23,2053.93
+"Beauty","Wrong Item",21,23,1663.43
